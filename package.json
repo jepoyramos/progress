@@ -1,0 +1,25 @@
+{
+  "name": "progress",
+  "version": "1.0.0",
+  "description": "learning progress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack-dev-server",
+    "build:prod": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jepoyramos/progress.git"
+  },
+  "author": "Jepoy Ramos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jepoyramos/progress/issues"
+  },
+  "homepage": "https://github.com/jepoyramos/progress#readme",
+  "devDependencies": {
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}
