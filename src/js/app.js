@@ -1,3 +1,3 @@
-import '../path/mainscssfile';
-import {jsMethod } from './jsfilepath';
+import '../scss/main.scss';
+/*import {jsMethod } from './jsfilepath';*/
 
