@@ -1,5 +1,6 @@
 var path = require('path'); //node js package
 var ExtractTextPlugin = require('extract-text-webpack-plugin'); //get this plugin installed using npm
+var HtmlWebpackPlugin = require('html-webpack-plugin'); // import html webpack plugin and assign it to this variable
 
 var extractPlugin = new ExtractTextPlugin({ // assign plugin to this var
   filename: 'main.css' //tell which file or what file name should be used/created in compiling scss files
@@ -10,7 +11,7 @@ module.exports = {
     output:{
       path: path.resolve(__dirname, 'dist'), //'__dirname = current/absolurte directory', 'directory so save the compiled js'
       filename: 'bundle.js', //'file to create', end result 
-      publicPath: '/dist' //tells webpack that files will be in this folder
+      //publicPath: '/dist' //tells webpack that files will be in this folder
     },
     module:{
       rules:[
@@ -33,7 +34,7 @@ module.exports = {
               'sass-loader' //'first load ', 'compile scss/sass to css'
             ]
           })
-        }
+        },
         {
           test: /\.html$/, //test for html extension file
           use: ['html-loader']
@@ -45,8 +46,8 @@ module.exports = {
               loader: 'file-loader',
               options:{ //sets where the file should be stored and how should it be named.
                 name: '[name].[ext]', //keeps the original name rather than random hash code plus extension file
-                outputPath: 'img/',
-                publicPath: 'img/'
+                outputPath: 'img/', //set where to output inside dist folder
+                publicPath: 'img/' // inform html img location reference 
               }
             }
           ]
@@ -56,6 +57,10 @@ module.exports = {
     },
 
     plugins:[
-      extractPlugin // extract style and create a css file named main which is set before
+      extractPlugin, // extract style and create a css file named main which is set before
+      new HtmlWebpackPlugin({
+        template: 'src/index.html'
+      })
+
     ]
 };
