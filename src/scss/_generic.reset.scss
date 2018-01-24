@@ -1,0 +1,15 @@
+// _settings.global
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+button{
+	outline:none;
+	
+	&:hover{
+		cursor: pointer;
+	}
+}

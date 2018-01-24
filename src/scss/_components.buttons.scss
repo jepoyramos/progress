@@ -1,0 +1,43 @@
+/* COMPONENT: Buttons*/
+
+.c-btn--primary {
+	background-color: $blue-main-color;
+	color:$white-main-color;
+
+	&:hover {
+		background-color: $blue-accent-color;
+	}
+}
+
+.c-btn--default {
+	background-color: $grey-main-color;
+	color:$white-main-color;
+
+	&:hover {
+		background-color: $grey-accent-color;
+	}
+}
+
+.c-btn--success {
+	background-color: $green-main-color;
+	color:$white-main-color;
+
+	&:hover {
+		background-color: $green-accent-color;
+	}
+}
+
+.c-opt {
+	background-color: $white-main-color;
+	color:$black-main-color;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	border:1px solid  $grey-accent-color;
+	border-radius: $border-radius-xl;
+	font-size: 14px;
+}
+
+.c-opt--active{
+	background-color: $default-main-color;
+}

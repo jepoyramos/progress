@@ -61,7 +61,7 @@ module.exports = {
               options:{ //sets where the file should be stored and how should it be named.
                 name: '[name].[ext]', //keeps the original name rather than random hash code plus extension file
                 outputPath: 'img/', //set where to output inside dist folder
-                publicPath: 'img/' // inform html img location reference 
+                //publicPath: 'img/' // inform html img location reference 
               }
             }
           ]
@@ -80,12 +80,13 @@ module.exports = {
         filename: 'index.html', //
         template: 'src/index.html' //tells webpack to use the index.html inside src folder as the template
       }),
+      new CleanWebpackPlugin(['dist'])// use plugin to clean every folder inserted inside the array
       /*new HtmlWebpackPlugin({ //sets a new html page template
         filename: 'users.html',
         template: 'src/users.html', 
         chunks[];
       }),*/
-      new CleanWebpackPlugin(['dist'])// use plugin to clean every folder inserted inside the array
+      
 
     ]
 };

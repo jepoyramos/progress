@@ -1,0 +1,11 @@
+/* LINKS */
+
+a{
+	text-decoration: none;
+	display: block;
+	color: $blue-main-color;
+
+	&:active, &:hover, &:focus{
+		color: $blue-accent-color;
+	}
+}

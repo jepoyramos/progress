@@ -1,0 +1,14 @@
+/* INPUTS */
+
+input{
+	font-family: $font-family;
+	padding: $padding-xxs;
+	width: 100%;
+	&:active, &:focus {
+		outline: none;
+	}
+}
+
+.o-input {
+	margin:$margin-xs $margin;
+}

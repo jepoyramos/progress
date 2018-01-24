@@ -1,0 +1,20 @@
+/* BUTTONS */
+
+button {
+	font-family: $font-family;
+	border:none;
+	border-radius: $border-radius-xxs;
+	margin:$margin-xs $margin;
+}
+
+.o-submit {
+	padding: $padding-xs $padding-s;
+}
+
+.o-get {
+	padding: $padding-xs $padding-s;
+}
+
+.o-opt {
+	padding: $padding-xs $padding-s;
+}

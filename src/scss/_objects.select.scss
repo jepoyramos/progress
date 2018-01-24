@@ -1,0 +1,11 @@
+/* SELECT */
+
+select { 
+	font-family: $font-family;
+	padding: $padding-xxs;
+}
+
+.o-select {
+	margin: $margin-xs $margin;
+	width:100%;
+}

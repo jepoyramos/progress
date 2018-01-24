@@ -1,0 +1,55 @@
+/* OBJECTS: Wrapper */
+
+.o-wrapper {
+	max-width: 50%;
+	margin:0 auto;
+	position: relative;
+
+	@media only screen and (max-width: 700px) {
+        max-width:100%;
+	}
+}
+
+.o-wrapper--wide {
+	width:80%;
+	margin:0 auto;
+}
+
+.o-wrapper--center {
+	text-align: center;
+}
+
+.o-buttonContainer {
+	position: relative;
+	padding:$padding-xxs $padding;
+}
+
+.o-wrapper--hide {
+	display: none;
+}
+
+.o-wrapper--show {
+	display: block;
+}
+
+.o-wrapper--vertical {
+	position: absolute;
+	top:50%;
+	transform:translateY(-50%);
+	left:0;
+	right:0;
+	margin:0 auto;
+}
+
+.o-wrapper--vmobile {
+	position: absolute;
+	top:50%;
+	transform:translateY(-50%);
+	left:0;
+	right:0;
+	margin:0 auto;
+
+	@media only screen and (max-width: 700px) {
+        position:relative;
+	}
+}

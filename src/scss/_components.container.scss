@@ -1,0 +1,28 @@
+/* CONTAINER */
+
+.c-main--wrapper {
+	position: relative;
+	height:100vh;
+}
+
+// container for questions
+.c-prerecomm {
+	padding:$padding-m;
+	height:100vh;
+}
+
+.c-brokers {
+	padding: $padding-m;
+}
+
+.c-optradio {
+	padding: $padding-m $padding;
+}
+
+.c-intro{
+	margin: $margin-m auto;
+	padding: $padding-m;
+	border:1px solid $black-accent-color;
+	border-radius: $border-radius-xxs;
+	background-color: $white-main-color;
+}
