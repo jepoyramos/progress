@@ -4,7 +4,7 @@
 @import "settings.global";
 
 //tools
-@import "tools.mixin";
+@import "tools.mixins";
 
 // generics
 @import "generic.reset";
@@ -31,7 +31,6 @@
 
 // components
 @import "components.container";
-@import "components.questions";
 @import "components.buttons";
 
 //utilities
